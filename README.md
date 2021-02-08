@@ -65,3 +65,17 @@ python manage.py createsuperuser
 ```
 python manage.py runserver
 ```
+- Push Changes-
+```
+git add .
+git commit -m "<your commit message>"
+git push
+```
+<br>
+
+Don't make PR directly, make issues first, once you are assigned, start working and then create a PR
+
+# Note:
+
+- You need to add mobile phones yourself. Go to admin page in browser, add mobile phones in products according to the company.
+- Don't add staticfiles, sqlite3 files while commiting. 
