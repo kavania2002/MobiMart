@@ -16,6 +16,8 @@ A mobile shopping Website
 
 ## Open Source Contests
 
+[![chat on discord](https://img.shields.io/badge/chat-on%20discord-brightgreen)](https://discord.gg/QugF4JAw)
+
 ## Quick Start
 
 - Fork and Clone the repository using-
