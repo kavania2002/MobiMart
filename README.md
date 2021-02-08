@@ -80,6 +80,6 @@ Don't make PR directly, make issues first, once you are assigned, start working 
 - You need to add mobile phones yourself. Go to admin page in browser, add mobile phones in products according to the company.
 - Don't add staticfiles, sqlite3 files while commiting.
 <br>
-
+<hr>
 - Have a look of the website which was before any contributions.  
 [MobiMart](https://mobimartk.herokuapp.com/)
