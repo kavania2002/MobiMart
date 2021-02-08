@@ -81,5 +81,6 @@ Don't make PR directly, make issues first, once you are assigned, start working 
 - Don't add staticfiles, sqlite3 files while commiting.
 <br>
 <hr>
-- Have a look of the website which was before any contributions.  
-[MobiMart](https://mobimartk.herokuapp.com/)
+
+Have a look of the website which was before any contributions.   
+https://mobimartk.herokuapp.com/
