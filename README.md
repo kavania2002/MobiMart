@@ -22,7 +22,7 @@ A mobile shopping Website
 
 - Fork and Clone the repository using-
 ```
-git clone https://github.com/diyajaiswal11/Bloggitt.git
+git clone https://github.com/kavania2002/MobiMart.git
 ```
 - Create a Branch- 
 ```
