@@ -73,10 +73,10 @@ git push
 ```
 <br>
 
-Don't make PR directly, make issues first, once you are assigned, start working and then create a PR
 
 # Note:
 
+- Don't make PR directly, make issues first, once you are assigned, start working and then create a PR
 - You need to add mobile phones yourself. Go to admin page in browser, add mobile phones in products according to the company.
 - Don't add staticfiles, sqlite3 files while commiting.
 <br>
