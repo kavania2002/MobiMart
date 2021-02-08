@@ -71,7 +71,7 @@ python manage.py runserver
 ```
 git add .
 git commit -m "<your commit message>"
-git push
+git push --set-upstream origin <branch_name>
 ```
 <br>
 
