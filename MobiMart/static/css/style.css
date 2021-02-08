@@ -1,0 +1,55 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.title {
+    background-color: black;
+    color: white;
+    padding: 3% 9% 5%;
+}
+
+.navbar {
+    padding-bottom: 5%;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.nav-item {
+    font-size: 1.25rem;
+}
+
+.heading {
+    padding-top: 25%;
+    padding-left: 5%;
+}
+
+.companies1 {
+    padding: 2% 9%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: black;
+}
+
+.companies2 {
+    padding: 2% 9%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: black;
+    color: white;
+
+}
+
+.mobi {
+    width: 80%;
+}
+
+.row{
+    padding-top: 2%;
+}
+
+.chg:hover{
+    visibility: 0.5;
+    cursor: pointer;
+}

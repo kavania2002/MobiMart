@@ -1,0 +1,154 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+
+<div class="row">
+    <div class="col-5 text-center">
+        <form id="form" action="">
+            <table class="table table-info table-borderless">
+                <tr>
+                    <td colspan=2>
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan=2><b>Shipping Information:</b></td>
+                </tr>
+                <tr>
+                    <td colspan=2>
+                        <hr>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="text" name="address" placeholder="Address" autofocus>
+                    </td>
+                    <td>
+                        <input type="text" name="city" placeholder="City">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="text" name="state" placeholder="State">
+                    </td>
+                    <td>
+                        <input type="text" name="zipcode" placeholder="Zipcode">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan=2>
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="submit" id="continue" class="btn btn-warning">Continue</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <div class="col-1"></div>
+
+    <div class="col-5">
+        <table class="table table-info table-borderless">
+            <tr>
+                <td colspan=1>
+                    <h3>Order Summary</h3>
+                </td>
+                <td colspan="4">
+                    <button class="btn btn-warning"><a class="nav-link link-dark" href="cart">Back To Cart</a></button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan=4>
+                    <hr>
+                </td>
+            </tr>
+            {% for item in items %}
+            <tr>
+                <td><img src="{{item.product.link}}" width="20%" alt=""></td>
+                <td>{{item.product.mobName}}</td>
+                <td>Rs. {{item.product.price}}</td>
+                <td>{{item.quantity}}</td>
+            </tr>
+            {% endfor %}
+            <tr>
+                <td colspan=4>
+                    <hr>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="1">Items: {{order.get_cart_items}}</td>
+                <td colspan="3">Total: Rs. {{order.get_cart_total}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-6 text-center">
+        <button id="make-payment" class="btn btn-warning visually-hidden" type="submit">
+            <a class="nav-link link-dark">Make Payment</a>
+        </button>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var form = document.getElementById('form')
+    var total = '{{order.get_cart_total}}'
+    console.log(total)
+
+    form.addEventListener('submit', function(e){
+        e.preventDefault()
+        document.getElementById('continue').classList.add('visually-hidden')
+        document.getElementById('make-payment').classList.remove('visually-hidden')
+    })
+
+    document.getElementById('make-payment').addEventListener('click', function (e) {
+        submitFormData()
+    })
+
+    function submitFormData() {
+        console.log('Payment button Clicked')
+
+        var shippingInfo = {
+            'address':null,
+            'city':null,
+            'state':null,
+            'zipcode':null,
+            'total':total,
+        }
+
+        shippingInfo.address = form.address.value
+        shippingInfo.city = form.city.value
+        shippingInfo.state = form.state.value
+        shippingInfo.zipcode = form.zipcode.value
+
+        var url = 'processOrder'
+
+        fetch(url, {
+            method:'POST',
+            headers:{
+                'Content-Type':'application/json',
+                'X-CSRFToken':csrftoken,
+            },
+            body:JSON.stringify({'form':shippingInfo})
+        })
+        .then((respone) => respone.json())
+        .then((data) => {
+            console.log('Success:',data);
+            alert('Transaction Completed'),
+            window.location.href = "{% url 'index' %}"
+        })
+        
+    }
+
+</script>
+
+{% endblock %}

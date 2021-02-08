@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+
+<div class="row">
+    <div class="col-2 container-fluid">
+        <button class="btn btn-warning"><a class="nav-link link-dark" href="/">Continue Shopping</a></button>
+    </div>
+    <div class="col-3">
+        <table class="table table-borderless">
+            <tr>
+                <td>Items: <strong>{{order.get_cart_items}}</strong></td>
+                <td>Total: <strong>Rs. {{order.get_cart_total}}</strong> </td>
+            </tr>
+        </table>
+        <hr>
+    </div>
+    <div class="col-3" >
+        <button class="btn btn-warning"><a class="nav-link link-dark" href="checkout">Checkout</a></button>
+    </div>
+</div>
+
+<div class="container-fluid center">
+    <table class="table table-borderless table-info" style="width: 70%; margin: auto;">
+        <thead class="table-dark">
+            <td>Product Image</td>
+            <td>Item</td>
+            <td>Price</td>
+            <td>Quantity</td>
+            <td>Total</td>
+        </thead>
+
+        {% for item in items %}
+        <tr>
+            <td><img src="{{item.product.link}}" style="width: 25%;"></td>
+            <td>{{item.product.mobName}}</td>
+            <td>Rs. {{item.product.price}}</td>
+            <td><img data-product="{{item.product.id}}" data-action="remove" class="update-cart chg" src="https://visualpharm.com/assets/795/Minus-595b40b75ba036ed117d8119.svg" width="8%"> {{item.quantity}} <img data-product="{{item.product.id}}" data-action="add" class="update-cart chg" src="https://simpleicon.com/wp-content/uploads/plus.png" width="8%"></td>
+            <td>Rs. {{item.get_total}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+{% endblock %}

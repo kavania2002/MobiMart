@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .form-signin {
+            width: 40%;
+            margin-top: 10%;
+        }
+    </style>
+</head>
+
+
+
+<body class="text-center">
+    <div class="form-signin container-fluid">
+        <form action="register" method="POST">
+            {% csrf_token %}
+            <table align="center" class="table table-borderless table-dark table-hover">
+                <thead colspan="2">
+                    <h2>Registration Form</h2>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><label class="form-label">First Name</label></td>
+                        <td><input type="text" name="fname" required autofocus></td>
+                    </tr>
+                    <tr>
+                        <td><label class="form-label">Last Name</label></td>
+                        <td><input type="text" name="lname" required></td>
+                    </tr>
+                    <tr>
+                        <td><label class="form-label">Email</label></td>
+                        <td><input type="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label class="form-label">Username</label></td>
+                        <td><input class="" type="text" name="username" required></td>
+                    </tr>
+                    <tr>
+                        <td><label class="form-label">Password</label></td>
+                        <td><input class="" type="password" name="password1" required></td>
+                    </tr>
+                    <tr>
+                        <td><label class="form-label">Confirm Password</label></td>
+                        <td><input class="" type="password" name="password2" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input class="btn btn-primary" type="submit" value="Submit">
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <td colspan="2">
+                        {% for message in messages %}
+                        <h5 align="center">{{message}}</h5>
+                        {% endfor %}
+                    </td>
+                </tfoot>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>

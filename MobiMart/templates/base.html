@@ -1,0 +1,93 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="title" property='og:title' content='MobiMart' />
+    <meta name="image" property='og:image' content='https://mobimartk.herokuapp.com/static/images/Logo.png' />
+    <meta name="description" property='og:description' content='Shop your mobile.' />
+    <meta property='og:url' content='https://mobimartk.herokuapp.com/' />
+    
+    <title>MobiMart</title>
+    <!-- CSS Static -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/ffb7ff15c1.js" crossorigin="anonymous"></script>
+
+    <script>
+        var user = '{{request.user}}'
+
+        function getToken(name) {
+            let cookieValue = null;
+            if (document.cookie && document.cookie !== '') {
+                const cookies = document.cookie.split(';');
+                for (let i = 0; i < cookies.length; i++) {
+                    const cookie = cookies[i].trim();
+                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+        const csrftoken = getToken('csrftoken');
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Tittle Section -->
+    <div class="title">
+
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a href="/" class="navbar-brand"><img src="{% static 'images/Logo.png' %}" alt="Logo" srcset=""></a>
+                <img src="https://mobimartk.herokuapp.com/static/images/Logo.png" class="visually-hidden" alt="" srcset="">
+                <ul class="navbar-nav">
+                    {% if user.is_authenticated %}
+                    <li class="nav-item">
+                        Welcome {{user.first_name}}
+                    </li>
+                    <li></li>
+                    <li class="nav-item">
+                        <a href="cart"><i class="fas fa-shopping-cart nav-link"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="logout" class="nav-link">Logout</a>
+                    </li>
+
+                    {% else %}
+                    <li class="nav-item">
+                        <a href="login" class="nav-link">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="register" class="nav-link">Create Account</a>
+                    </li>
+                    {% endif %}
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    {% block content %}
+
+    {% endblock %}
+
+    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
