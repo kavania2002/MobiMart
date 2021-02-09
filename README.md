@@ -24,10 +24,6 @@ A mobile shopping Website
 ```
 git clone https://github.com/kavania2002/MobiMart.git
 ```
-- Create a Branch- 
-```
-git checkout -b <branch_name>
-```
 - Create virtual environment-
 ```
 python -m venv env
@@ -71,7 +67,7 @@ python manage.py runserver
 ```
 git add .
 git commit -m "<your commit message>"
-git push --set-upstream origin <branch_name>
+git push
 ```
 <br>
 
