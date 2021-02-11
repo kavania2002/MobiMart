@@ -14,9 +14,9 @@ A mobile shopping Website
 - **Frontend:** HTML/CSS/Bootstrap
 - **Backend:** Django
 
-### Open Source Contests
+## Open Source Contests
 
-#### Cross Winter of Code (CrossWoC'21)
+### Cross Winter of Code (CrossWoC'21)
 
 [![chat on discord](https://img.shields.io/badge/chat-on%20discord-brightgreen)](https://discord.gg/QugF4JAw)
 
