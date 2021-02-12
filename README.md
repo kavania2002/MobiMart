@@ -1,13 +1,4 @@
-# MobitMart
-A mobile shopping Website
-
-[![GitHub issues](https://img.shields.io/github/issues/kavania2002/MobiMart)](https://github.com/kavania2002/MobiMart/issues)
-[![GitHub forks](https://img.shields.io/github/forks/kavania2002/MobiMart)](https://github.com/kavania2002/MobiMart/network)
-[![GitHub stars](https://img.shields.io/github/stars/kavania2002/MobiMart)](https://github.com/kavania2002/MobiMart/stargazers)
-[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) 
-![contributions welcome](https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=0059b3&style=flat-square) 
-![GitHub contributors](https://img.shields.io/github/contributors-anon/kavania2002/MobiMart)
+![MobiMart](https://socialify.git.ci/kavania2002/MobiMart/image?description=1&descriptionEditable=MobiMart%20is%20a%20mobile%20shopping%20website.%20Very%20useful%20for%20Django%20beginner.&font=Bitter&forks=1&issues=1&language=1&owner=1&pattern=Plus&pulls=1&stargazers=1&theme=Light)
 <br>
 
 ## Tech Stack
