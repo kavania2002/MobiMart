@@ -9,14 +9,14 @@ import datetime
 from .models import *
 
 # Create your views here.
-def checkpass(str):
+def checkpass(passw3):
     is_digit=False
     is_upper=False
     is_lower=False
     is_check=False
     is_length=False
     is_special=True
-    for i in str:
+    for i in passw3:
         if i.isupper():
             is_upper=True
         if i.islower():
@@ -27,7 +27,7 @@ def checkpass(str):
             if i!='@' and i!='!' and i!='$':
                 is_special=False
     is_check=is_digit and is_lower and is_upper and is_special
-    if len(str)>=8 and len(str)<=20:
+    if len(passw3)>=8 and len(passw3)<=20:
         is_length=True
     return is_check and is_length
 
