@@ -26,11 +26,10 @@ def checkpass(str):
         if not i.isdigit() and not i.isalpha():
             if i!='@' and i!='!' and i!='$':
                 is_special=False
-        is_check=is_digit and is_lower and is_upper and is_special
-        if(is_check):
-            break
-    if len(str)<8 or len(str)>20:
+    is_check=is_digit and is_lower and is_upper and is_special
+    if len(str)>=8 and len(str)<=20:
         is_length=True
+    return is_check and is_length
 
 
 
