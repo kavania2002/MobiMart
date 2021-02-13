@@ -9,6 +9,31 @@ import datetime
 from .models import *
 
 # Create your views here.
+def checkpass(str):
+    is_digit=False
+    is_upper=False
+    is_lower=False
+    is_check=False
+    is_length=False
+    is_special=True
+    for i in str:
+        if i.isupper():
+            is_upper=True
+        if i.islower():
+            is_lower=True
+        if i.isdigit():
+            is_digit=True
+        if not i.isdigit() and not i.isalpha():
+            if i!='@' and i!='!' and i!='$':
+                is_special=False
+        is_check=is_digit and is_lower and is_upper and is_special
+        if(is_check):
+            break
+    if len(str)<8 or len(str)>20:
+        is_length=True
+
+
+
 def index(request):
     products = Product.objects.all()
 
@@ -30,6 +55,11 @@ def register(request):
             elif User.objects.filter(email=email).exists():
                 messages.info(request,"Email Already Exists")
                 return redirect("register")
+            elif not checkpass(passw1):
+                messages.info(request,"1. Must be 8 - 20 characters of length\n2. Must have atleast one capital letters and lowercase letters and numbers\n3. Only accepted @, !, $ (like this type) of characters")
+                return redirect("register")
+
+
             else:
                 user = User.objects.create_user(username=username,first_name=firstname,last_name=lastname,email=email,password=passw1)
                 user.save()
