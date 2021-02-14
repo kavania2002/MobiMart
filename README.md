@@ -38,7 +38,7 @@ CrossWoC is a six-week long opensource event organised by IEEE DTU & IEEE DTU CS
 Look into [Contributing Guidelines](https://github.com/kavania2002/MobiMart/blob/main/.github/contributing.md) for contributing to this repository.
 - Don't make PR directly, make issues first, once you are assigned, start working and then create a PR
 - You need to add mobile phones yourself. Go to admin page in browser, add mobile phones in products according to the company.
-- Don't add staticfiles, sqlite3 files while commiting.
+- There are 6 phones added by admin. The common username and password for admin is mobimart and mobimart respectively. 
 <br>
 <hr>
 
