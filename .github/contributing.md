@@ -1,6 +1,27 @@
-# Contributing to MobiMart
-I am glad that you are contributing to this project. Thanks in advance.
-This is a beginner friendly Django Project, so those who want to learn Django should contribute here.
+# 🤝***First time contributing? We will help you out.*** 👍
+
+![GitHub custom open for collaboration](https://img.shields.io/badge/Open%20For-Collaboration-brightgreen?style=for-the-badge)
+
+Refer to the following articles on the basics of Git and Github and can also contact the Project Mentors, in case you are stuck:
+
+
+- [Getting started with Git and GitHub](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github)
+- [Forking a Repo](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
+- [Cloning a Repo](https://help.github.com/en/desktop/contributing-to-projects/creating-a-pull-request)
+- [How to create a Pull Request](https://opensource.com/article/19/7/create-pull-request-github)
+
+***If you don't have git on your machine, [install it](https://help.github.com/articles/set-up-git/).***
+
+## 💥 How to Contribute
+
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
+
+- Take a look at the Existing [Issues](https://github.com/kavania2002/MobiMart/issues) or create your own Issues!
+- Wait for the Issue to be assigned to you after which you can start working on it.
+- Fork the Repo and create a Branch for any Issue that you are working upon.
+- Create a Pull Request which will be promptly reviewed and suggestions would be added to improve it.
+- Add Screenshots to help us know what this Script is all about.
 
 ### For Contribution
 
@@ -53,79 +74,36 @@ git add .
 git commit -m "<your commit message>"
 git push
 ```
+**8.** Create a [PR](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) !
 
-## Code of Conduct
+**9.** **Congratulations!** Sit and relax, you've made your contribution to [MobiMart](https://github.com/kavania2002/MobiMart) project.
 
-### Our Pledge
+***:trophy: After this, project leaders and mentors will review the changes and will merge your PR if they are found good, otherwise we will suggest the required changes.***
 
-In the interest of fostering an open and welcoming environment, we as
-contributors and maintainers pledge to making participation in our project and
-our community a harassment-free experience for everyone, regardless of age, body
-size, disability, ethnicity, gender identity and expression, level of experience,
-nationality, personal appearance, race, religion, or sexual identity and
-orientation.
+## Style Guides for Git Commit Messages:memo:
 
-### Our Standards
+#### Here's a list of some good to have points, that can add more value to your contribution logs.
 
-Examples of behavior that contributes to creating a positive environment
-include:
+- Use the present tense (example: "Add feature" and not "Added feature")
+- Use the imperative mood (example: "Move item to...", instead of "Moves item to...")
+- Limit the first line (also called subject line) to 50 characters or less
+- Capitalize the subject line
+- Separate subject from body with a blank line
+- Do not end the subject line with a period
+- Wrap the body at 72 characters
+- Use the body to explain what, why, vs, and how
+- Reference issues and pull requests liberally after the first line
 
-* Using welcoming and inclusive language
-* Being respectful of differing viewpoints and experiences
-* Gracefully accepting constructive criticism
-* Focusing on what is best for the community
-* Showing empathy towards other community members
+For more detailed reference to the above points, refer here: https://chris.beams.io/posts/git-commit.
 
-Examples of unacceptable behavior by participants include:
+## 💥 Issues:
+For major changes, you are welcomed to open an issue about what you would like to contribute. Enhancements will be appreciated.
 
-* The use of sexualized language or imagery and unwelcome sexual attention or
-advances
-* Trolling, insulting/derogatory comments, and personal or political attacks
-* Public or private harassment
-* Publishing others' private information, such as a physical or electronic
-  address, without explicit permission
-* Other conduct which could reasonably be considered inappropriate in a
-  professional setting
+#### All the Best!🥇
 
-### Our Responsibilities
+<p align = "center">
 
-Project maintainers are responsible for clarifying the standards of acceptable
-behavior and are expected to take appropriate and fair corrective action in
-response to any instances of unacceptable behavior.
+<a href="https://github.com/muthuannamalai12"><img src="http://ForTheBadge.com/images/badges/built-by-developers.svg" alt="built by developers"></a>
+[![built with love](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/kavania2002/MobiMart)
 
-Project maintainers have the right and responsibility to remove, edit, or
-reject comments, commits, code, wiki edits, issues, and other contributions
-that are not aligned to this Code of Conduct, or to ban temporarily or
-permanently any contributor for other behaviors that they deem inappropriate,
-threatening, offensive, or harmful.
-
-### Scope
-
-This Code of Conduct applies both within project spaces and in public spaces
-when an individual is representing the project or its community. Examples of
-representing a project or community include using an official project e-mail
-address, posting via an official social media account, or acting as an appointed
-representative at an online or offline event. Representation of a project may be
-further defined and clarified by project maintainers.
-
-### Enforcement
-
-Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported by contacting the project team at kavan155gondalia@gmail.com . All
-complaints will be reviewed and investigated and will result in a response that
-is deemed necessary and appropriate to the circumstances. The project team is
-obligated to maintain confidentiality with regard to the reporter of an incident.
-Further details of specific enforcement policies may be posted separately.
-
-Project maintainers who do not follow or enforce the Code of Conduct in good
-faith may face temporary or permanent repercussions as determined by other
-members of the project's leadership.
-
-### Attribution
-
-This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4,
-available at [http://contributor-covenant.org/version/1/4][version]
-
-[homepage]: http://contributor-covenant.org
-[version]: http://contributor-covenant.org/version/1/4/
-
+</p>
