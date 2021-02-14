@@ -34,7 +34,7 @@ git clone https://github.com/kavania2002/MobiMart.git
 python -m venv env
 env\Scripts\activate
 ```
-- Install dependencies using-
+**3.** Install dependencies using-
 ```
 pip install -r requirements.txt
 ```
@@ -74,11 +74,11 @@ git add .
 git commit -m "<your commit message>"
 git push
 ```
-**8.** Create a [PR](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) !
+- Create a [PR](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) !
 
-**9.** **Congratulations!** Sit and relax, you've made your contribution to [MobiMart](https://github.com/kavania2002/MobiMart) project.
+- **Congratulations!** Sit and relax, you've made your contribution to [MobiMart](https://github.com/kavania2002/MobiMart) project.
 
-***:trophy: After this, project leaders and mentors will review the changes and will merge your PR if they are found good, otherwise we will suggest the required changes.***
+- :trophy: After this, project leaders and mentors will review the changes and will merge your PR if they are found good, otherwise we will suggest the required changes.***
 
 ## Style Guides for Git Commit Messages:memo:
 
