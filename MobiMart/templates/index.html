@@ -87,5 +87,130 @@
 
 
 
+<div class="container-fluid companies3">
+    <center><img width="25%" height="25%" src="https://i.pinimg.com/originals/04/cb/27/04cb27739eb8732d17e838c16b5b2287.png"
+            alt="Realme Logo"></center>
+
+
+    <div class="row">
+
+        {% for product in products %}
+        {% if product.compName == "Realme" %}
+        <div class="col-lg-4">
+            <div class="mobi-desc3">
+                <h4 align="center">{{product.mobName}}</h4>
+            </div>
+            <img class="mobi" src={{product.link}} alt="Realme Phone" srcset="">
+            <div class="mobi-desc3">
+                <h4 align="center">₹ {{product.price}}</h4>
+            </div>
+            <div>
+                <button data-product="{{product.id}}" data-action="add"
+                    class="btn btn-lg btn-outline-warning update-cart">Add to Cart</button>
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+
+
+
+    </div>
+</div>
+
+<div class="container-fluid companies4">
+    <center><img width="25%" height="25%" src="https://www.freepnglogos.com/uploads/oppo-logo-png/oppo-logo-and-symbol-meaning-history-png-3.png"
+            alt="Oppo Logo"></center>
+
+
+    <div class="row">
+
+        {% for product in products %}
+        {% if product.compName == "Oppo" %}
+        <div class="col-lg-4">
+            <div class="mobi-desc4">
+                <h4 align="center">{{product.mobName}}</h4>
+            </div>
+            <img class="mobi" src={{product.link}} alt="Oppo Phone" srcset="">
+            <div class="mobi-desc4">
+                <h4 align="center">₹ {{product.price}}</h4>
+            </div>
+            <div>
+                <button data-product="{{product.id}}" data-action="add"
+                    class="btn btn-lg btn-outline-warning update-cart">Add to Cart</button>
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+
+
+
+    </div>
+</div>
+
+
+
+<div class="container-fluid companies5">
+    <center><img width="45%" height="25%" src="https://www.searchpng.com/wp-content/uploads/2019/01/vivo-Phone-logo.png"
+            alt="Vivo Logo"></center>
+
+
+    <div class="row">
+
+        {% for product in products %}
+        {% if product.compName == "Vivo" %}
+        <div class="col-lg-4">
+            <div class="mobi-desc5">
+                <h4 align="center">{{product.mobName}}</h4>
+            </div>
+            <img width="25%" height="60%" class="mobi" src={{product.link}} alt="Vivo Phone" srcset="">
+            <div class="mobi-desc5">
+                <h4 align="center">₹ {{product.price}}</h4>
+            </div>
+            <div>
+                <button data-product="{{product.id}}" data-action="add"
+                    class="btn btn-lg btn-outline-warning update-cart">Add to Cart</button>
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+
+
+
+    </div>
+</div>
+
+
+
+<div class="container-fluid companies6">
+    <center><img width="45%" height="25%" src="https://logodix.com/logo/914876.jpg"
+            alt="Redmi Logo"></center>
+
+
+    <div class="row">
+
+        {% for product in products %}
+        {% if product.compName == "Redmi" %}
+        <div class="col-lg-4">
+            <div class="mobi-desc6">
+                <h4 align="center">{{product.mobName}}</h4>
+            </div>
+            <img class="mobi" src={{product.link}} alt="Redmi Phone" srcset="">
+            <div class="mobi-desc6">
+                <h4 align="center">₹ {{product.price}}</h4>
+            </div>
+            <div>
+                <button data-product="{{product.id}}" data-action="add"
+                    class="btn btn-lg btn-outline-warning update-cart">Add to Cart</button>
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+
+
+
+    </div>
+</div>
+
+
 
 {% endblock %}
