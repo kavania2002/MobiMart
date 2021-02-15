@@ -41,6 +41,38 @@ body {
 
 }
 
+.companies3 {
+    padding: 2% 9%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: black;
+
+}
+.companies4 {
+    padding: 2% 9%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: black;
+    color: white;
+
+}
+.companies5 {
+    padding: 2% 9%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: black;
+    color: black;
+
+}
+.companies6 {
+    padding: 2% 9%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: black;
+    color: white;
+
+}
+
 .mobi {
     width: 80%;
 }
