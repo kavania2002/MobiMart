@@ -3,9 +3,16 @@ body {
 }
 
 .title {
-    background-color: black;
-    color: white;
+    /* background-color: black;
+    color: white; */
     padding: 3% 9% 5%;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #da723c !important;
+}
+.themechange{
+    background-color: white;
+    color: black;
 }
 
 .navbar {
@@ -29,15 +36,15 @@ body {
     padding: 2% 9%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    color: black;
+    /* color: black; */
 }
 
 .companies2 {
     padding: 2% 9%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    background-color: black;
-    color: white;
+    /* background-color: black; */
+    /* color: white; */
 
 }
 
@@ -45,31 +52,31 @@ body {
     padding: 2% 9%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    color: black;
+    /* color: black; */
 
 }
 .companies4 {
     padding: 2% 9%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    background-color: black;
-    color: white;
+    /* background-color: black; */
+    /* color: white; */
 
 }
 .companies5 {
     padding: 2% 9%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    background-color: black;
-    color: black;
+    /* background-color: black; */
+    /* color: black; */
 
 }
 .companies6 {
     padding: 2% 9%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    background-color: black;
-    color: white;
+    /* background-color: black; */
+    /* color: white; */
 
 }
 
@@ -85,3 +92,38 @@ body {
     visibility: 0.5;
     cursor: pointer;
 }
+.switch {
+    display: flex;
+    border-radius: 50px;
+    width: 4rem;
+    height: 2rem;
+    padding: .3rem;
+    background-color: darkslateblue;
+    transition: background-color .2s;
+    cursor: pointer;
+    float: right;
+    margin-right: 5rem;
+    margin-left: 1rem;
+
+}
+.btn-toggle {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: white;
+    transition: transform .1s;
+}
+
+/* Dark Theme */
+.dark-theme {
+    background-color: #333 !important;
+    color: white !important;
+}
+
+.dark-theme .switch {
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.dark-theme .btn-toggle {
+    transform: translateX(28px);
+} 
