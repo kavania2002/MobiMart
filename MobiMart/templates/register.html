@@ -47,7 +47,7 @@ label{
 }
 .form-container{
     background-color: #79a4d17a;
-    margin-top: 3.2em;
+    margin-top: 1.7em;
     width: 59%;
     margin-left:16em;
     padding: 50px 50px;
@@ -59,9 +59,15 @@ label{
 }
 #btn-id{
     width:84%;
-    margin-top: 1.5em;
     margin-left: 1.5em;
     font-size: 1.8em;
+}
+#in3{
+    font-size: 1.7em;
+}
+#in2{
+  width: 26em;
+  font-size: 1em;
 }
 #in{
     width:26em;
@@ -69,13 +75,7 @@ label{
 }
         
     </style>
-
-
-
 </head>
-
-
-
 
 
 <body>
@@ -89,34 +89,44 @@ label{
         <div class="col-4">
            <label class="form-label">First Name</label></div>
            <div class="col-4">
-            <input type="text" class="form-control" placeholder="Enter First Name" required id="in"></div>
+            <input type="text" class="form-control" name="fname" placeholder="Enter First Name" required id="in"></div>
        </div>
 
            <div class="row">
             <div class="col-4">
            <label class="form-label">Last Name</label></div>
         <div class="col-4">
-            <input type="text" class="form-control" placeholder="Enter Last Name" required id="in"></div>
+            <input type="text" class="form-control" name="lname" placeholder="Enter Last Name" required id="in"></div>
         </div>
 
           <div class="row">
              <div class="col-4">
            <label class="form-label">Email</label></div>
                        <div class="col-4">
-            <input type="email" class="form-control" placeholder="Enter Email" required id="in"></div>
+            <input type="email" class="form-control" name="email" placeholder="Enter Email" required id="in"></div>
           </div>
+
           <div class="row">
             <div class="col-4">
            <label class="form-label">Username</label></div>
             <div class="col-4">
-            <input type="text" class="form-control" placeholder="Enter Username" required id="in"></div>
+            <input type="text" class="form-control" name="username" placeholder="Enter Username" required id="in"></div>
         </div>
+
           <div class="row">
          <div class="col-4">
-            <label for="exampleInputPassword1">Password</label></div>
+            <label class="form-label">Password</label></div>
          <div class="col-4">
-            <input type="password" class="form-control" placeholder="Password" required id="in"></div>
+            <input type="password" class="form-control" name="password1" placeholder="Password" required id="in"></div>
           </div>
+
+           <div class="row">
+         <div class="col-4">
+            <label class="form-label" id="in3">Confirm Password</label></div>
+         <div class="col-4">
+            <input type="password" class="form-control" name="password2" placeholder="Confirm Password" required id="in2"></div>
+          </div>
+
           <button type="submit" class="btn btn-primary btn-block" id="btn-id">Submit</button>
             {% for message in messages %}
             <h5 align="center">{{message}}</h5>
