@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -76,11 +75,11 @@ label{
 
           <h2>Login Form</h2>
           <div class="form-group">
-            <label for="exampleInputEmail1">Username</label>
-            <input type="text" class="form-control" placeholder="Enter username" required></div>
+            <label class="form-label">Username</label>
+            <input type="text" class="form-control" name="username" placeholder="Enter username" required></div>
           <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+            <label class="form-label">Password</label>
+            <input type="password" class="form-control" name="password" placeholder="Password" required>
           </div>
           <button type="submit" class="btn btn-primary btn-block" id="btn-id">Submit</button>
             {% for message in messages %}
