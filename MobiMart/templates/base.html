@@ -48,7 +48,6 @@
 </head>
 
 <body>
-    <div class="themechange">
 
     <!-- Tittle Section -->
     <div class="title">
@@ -59,10 +58,6 @@
                 <a href="/" class="navbar-brand"><img src="{% static 'images/Logo.png' %}" alt="Logo" srcset=""></a>
                 <img src="https://mobimartk.herokuapp.com/static/images/Logo.png" class="visually-hidden" alt="" srcset="">
                 <ul class="navbar-nav">
-                    <p>Light/Dark Mode</p>
-                        <div class="switch">
-                            <span class="btn-toggle"></span>
-                        </div>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
                         Welcome {{user.first_name}}
@@ -91,7 +86,6 @@
     {% block content %}
 
     {% endblock %}
-    </div>
 
     <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
 </body>
