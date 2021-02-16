@@ -37,3 +37,12 @@ function updateUserOrder(productId, action) {
         location.reload()
     })
 }
+document.addEventListener('DOMContentLoaded', function () {
+    const main = document.querySelector('.themechange')
+    const toggleSwitch = document.querySelector('.switch')
+
+    toggleSwitch.addEventListener('click', () => {
+        console.log("clicked");
+        main.classList.toggle('dark-theme')
+    })
+})
