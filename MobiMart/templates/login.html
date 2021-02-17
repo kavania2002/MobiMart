@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -62,15 +63,13 @@ label{
         
     </style>
 
-
-
 </head>
 
 <body>
   <div class="form-signin container-fluid">
     <div class="row">
       <div class="col-md-4">
-        <form class="form-container">
+        <form class="form-container" action="login" method="post">
             {% csrf_token %}
 
           <h2>Login Form</h2>
