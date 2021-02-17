@@ -10,6 +10,7 @@ body {
 .navbar-dark .navbar-nav .nav-link {
     color: #da723c !important;
 }
+
 .themechange{
     background-color: white;
     color: black;
@@ -127,3 +128,6 @@ body {
 .dark-theme .btn-toggle {
     transform: translateX(28px);
 } 
+.mobi-desc {
+    height: 10%;
+}
