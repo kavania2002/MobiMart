@@ -23,7 +23,7 @@
 
 ### Cross Winter of Code (CrossWoC'21)
 
-[![chat on discord](https://img.shields.io/badge/chat-on%20discord-brightgreen)](https://discord.gg/QugF4JAw)
+[![chat on discord](https://img.shields.io/badge/chat-on%20discord-brightgreen)](https://discord.gg/eYdGEAXXQk)
 
 CrossWoC is a six-week long opensource event organised by IEEE DTU & IEEE DTU CS, which gives programmers and innovators an opportunity to bring out their nascent talent and find intriguing solutions to real-world problems. It provides a platform for developers to dig deeper into their gray matter and bring out their latent creativity through open source.
 
