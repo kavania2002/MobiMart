@@ -60,9 +60,9 @@
                 <ul class="navbar-nav">
                     {% if user.is_authenticated %}
                     <li class="nav-item">
-                        Welcome {{user.first_name}}
+                        Welcome 
                     </li>
-                    <li></li>
+                    <li class="nav-item">{{user.first_name}}</li>
                     <li class="nav-item">
                         <a href="cart"><i class="fas fa-shopping-cart nav-link"></i></a>
                     </li>
