@@ -131,3 +131,44 @@ body {
 .mobi-desc {
     height: 10%;
 }
+.first_col{
+    flex-grow: 3 !important;
+}
+.item_quantity{
+    display: flex;
+    color: #212121;
+    align-items: center;
+}
+.quantity{
+    display: inline-block;
+    width: 46px;
+    height: 28px;
+    border-radius: 2px;
+    background-color: #fff;
+    border: 1px solid #c2c2c2;
+    margin: 0 5px;
+}
+.quantity input{
+    border: none;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    vertical-align: middle;
+    text-align: center;
+}
+.minusplus_sign{
+    width: 28px;
+    height: 28px;
+    background: linear-gradient(#fff,#f9f9f9);
+    display: inline-block;
+    border: 1px solid #c2c2c2;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 50%;
+    padding-top: 1px;
+    line-height: 1;
+}
+.cart_buttons{
+    display: flex;
+    justify-content: space-between;
+}
