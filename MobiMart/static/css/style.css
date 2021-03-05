@@ -141,20 +141,14 @@ body {
 }
 .quantity{
     display: inline-block;
+    text-align: center;
     width: 46px;
     height: 28px;
     border-radius: 2px;
     background-color: #fff;
     border: 1px solid #c2c2c2;
     margin: 0 5px;
-}
-.quantity input{
-    border: none;
-    width: 100%;
-    font-size: 14px;
-    font-weight: 500;
-    vertical-align: middle;
-    text-align: center;
+    
 }
 .minusplus_sign{
     width: 28px;
