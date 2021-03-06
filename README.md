@@ -28,7 +28,9 @@
 CrossWoC is a six-week long opensource event organised by IEEE DTU & IEEE DTU CS, which gives programmers and innovators an opportunity to bring out their nascent talent and find intriguing solutions to real-world problems. It provides a platform for developers to dig deeper into their gray matter and bring out their latent creativity through open source.
 
 <div>
-<img src="https://crosswoc.ieeedtu.in/images/imgcw.png" alt = "CrossWoC'21"/>
+  
+[<img src="https://crosswoc.ieeedtu.in/images/imgcw.png" alt = "CrossWoC'21"/>](https://crosswoc.ieeedtu.in/)
+
 </div>
 
 <br>
