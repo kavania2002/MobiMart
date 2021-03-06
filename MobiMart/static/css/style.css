@@ -166,3 +166,7 @@ body {
     display: flex;
     justify-content: space-between;
 }
+.btn-warning{
+    width: 10rem;
+    height: 3rem;
+}
