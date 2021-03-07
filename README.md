@@ -80,7 +80,10 @@ https://mobimartk.herokuapp.com/
  <td align="center"><a href="https://github.com/vishwast03"><img alt="" src="https://avatars.githubusercontent.com/u/78464111?s=400&u=0d28cab531714251f66619f07330d402ed86f49d&v=4" width="100px;"><br><sub><b>
  Vishwas Tyagi </b></sub></a><br><a href="" title="Code">💻 </a></td></a></td>
  
- <td align="center"><a href="https://github.com/kmryashasvi"><img alt="" src="https://avatars.githubusercontent.com/u/66861659?s=400&u=64fefa0d1dc0f089b0cdb61f10f3691ee24cd636&v=4" width="100px;"><br><sub><b>
+ <td align="center"><a href="https://github.com/swetakb15"><img alt="" src="https://avatars.githubusercontent.com/u/56949216?s=400&u=83f98888a7e7dd2be693e6ab544cdcef85827f84&v=4" width="100px;"><br><sub><b>
+ Sweta Barnwal </b></sub></a><br><a href="" title="Code">💻 </a></td></a></td>
+ 
+  <td align="center"><a href="https://github.com/kmryashasvi"><img alt="" src="https://avatars.githubusercontent.com/u/66861659?s=400&u=64fefa0d1dc0f089b0cdb61f10f3691ee24cd636&v=4" width="100px;"><br><sub><b>
  Yashasvi </b></sub></a><br><a href="" title="Code">💻 </a></td></a></td>
   </tr>
 </tbody></table>
