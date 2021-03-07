@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Page</title>
-
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     
      <!-- Title bar icon -->
     <link rel = "icon" href ="./static/images/Logo.png" "type "image/x-icon"> 
 
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+                                                                                                                   
+     <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="{% static 'css/all.css' %}">    
+    
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -77,6 +80,129 @@ label{
     width:26em;
     padding: 4px;
 }
+     
+     /* ----------------- Footer Style--------------------- */
+
+
+/* ---------------- Global Classes ---------------*/
+
+
+:root{
+
+    /*      Theme colors        */
+    --text-gray: #3f4954;
+    --text-light : #686666da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #104f55;
+
+    /* gradient color   */
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;    
+    flex-wrap: wrap;
+}
+
+.container{
+    margin: 0 5vw;
+}
+
+.text-gray{
+    color: var(--text-gray);
+}
+
+p{
+    color: var(--text-light);
+}
+
+
+/* ------x------- Global Classes -------x-------*/
+
+footer.footer{
+    height: 100%;
+    background: var(--bg-color);
+    position: relative;
+}
+
+footer.footer .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+footer.footer .container > div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 2rem .9rem;
+}
+
+footer.footer .container h2{
+    color: var(--white);
+    font-size: 1.9rem;
+}
+
+footer.footer .newsletter .form-element{
+    background: black;
+    display: inline-block;
+}
+
+footer.footer .newsletter .form-element input{
+    padding: .5rem .7rem;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 1rem;
+    width: 74%;
+}
+
+footer.footer .newsletter .form-element span{
+    background: var(--sky);
+    padding: .5rem .7rem;
+    cursor: pointer;
+}
+
+footer.footer .instagram div > img{
+    display: inline-block;
+    width: 25%;
+    height: 50%;
+    margin: .3rem .4rem;
+}
+
+footer.footer .follow div i{
+    color: var(--white);
+    padding: 0 .4rem;
+}
+
+footer.footer .rights{
+    justify-content: center;
+}
+
+
+footer.footer .rights h4 a{
+    color: var(--white);
+}
+
+
+footer.footer .move-up{
+    position: absolute;
+    right: 6%;
+    top: 50%;
+}
+
+footer.footer .move-up span{
+    color: var(--midnight);
+}
+
+footer.footer .move-up span:hover{
+    color: var(--white);
+    cursor: pointer;
+}
+
+/* ---------x------- Footer Style----------x---------- */                      
+                           
         
     </style>
 
@@ -143,6 +269,63 @@ label{
             {% endfor %}
         </form>
       </div>
+                              
+      <!-- --------------------------- Footer ---------------------------------------- -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="about-us">
+                <h2>About Us</h2>
+                <p>MobiMart gives you a chance to quickly and easily find the phone you want and have it delivered to your home in no time, regardless of your location, as long as it is in one of the countries of the EU. At MobiMart we are always able to offer all the latest phones, great prices, reliable service, fast delivery and premium customer support.</p>
+            </div>
+            <div class="newsletter">
+                <h2>Any Complaints</h2>
+                <p>Write to us</p>
+                <div class="form-element">
+                    <input type="text" placeholder="Feedback.Mobi@mobi.co.in"><span><a href="mailto:kavan155gondalia@gmail.com"<i class="fas fa-chevron-right"></i></a></span>
+                </div>
+            </div>
+            <div class="instagram">
+                <h2>Upcoming Products</h2>
+                <div class="flex-row">
+                    <img src="./static/images/mobi1.jpg" alt="insta1">
+                    <img src="./static/images/mobi2.jpg" alt="insta2">
+                    <img src="./static/images/mobi3.jpg" alt="insta3">
+                </div>
+                <div class="flex-row">
+                    <img src="./static/images/mobi4.jpg" alt="insta4">
+                    <img src="./static/images/mobi5.jpg" alt="insta5">
+                    <img src="./static/images/mobi6.jpg" alt="insta6">
+                </div>
+            </div>
+            <div class="follow">
+                <h2>Follow Us</h2>
+                <p>Connect with MobiMart</p>
+                <div>
+                    <a href="https://www.linkedin.com/in/kavan-gondalia-5a78a41b2/" target="_black"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://www.facebook.com/" target="_black"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/kavania2002/" target="_black"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/" target="_black"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="rights flex-row">
+            <h4 class="text-gray">
+                Copyright © 2021 All rights reserved |
+                <a href="https://www.linkedin.com/in/kavan-gondalia-5a78a41b2/" target="_black">MobiMart</a>
+            </h4>
+        </div>
+        <div class="move-up">
+            <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+        </div>
+    </footer>
+
+    <!-- -------------x------------- Footer --------------------x------------------- -->                        
  
+     <script type="text/javascript" src="{% static 'js/Jquery3.4.1.min.js' %}"></script>
+                                                                             
+    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+                                                                  
+                                                                  
 </body>
 </html>
