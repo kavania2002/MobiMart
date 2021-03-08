@@ -21,6 +21,10 @@
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
+<!-- Font Awesome Icons -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/all.css' %}">
+
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -99,6 +103,61 @@
 
     {% endblock %}
     </div>
+
+<!-- --------------------------- Footer ---------------------------------------- -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="about-us">
+                <h2>About Us</h2>
+                <p>MobiMart gives you a chance to quickly and easily find the phone you want and have it delivered to your home in no time, regardless of your location, as long as it is in one of the countries of the EU. At MobiMart we are always able to offer all the latest phones, great prices, reliable service, fast delivery and premium customer support.</p>
+            </div>
+            <div class="newsletter">
+                <h2>Any Complaints</h2>
+                <p>Write to us</p>
+                <div class="form-element">
+                    <input type="text" placeholder="Feedback.Mobi@mobi.co.in"><span><a href="mailto:kavan155gondalia@gmail.com"<i class="fas fa-chevron-right"></i></a></span>
+                </div>
+            </div>
+            <div class="instagram">
+                <h2>Upcoming Products</h2>
+                <div class="flex-row">
+                    <img src="./static/images/mobi1.jpg" alt="insta1">
+                    <img src="./static/images/mobi2.jpg" alt="insta2">
+                    <img src="./static/images/mobi3.jpg" alt="insta3">
+                </div>
+                <div class="flex-row">
+                    <img src="./static/images/mobi4.jpg" alt="insta4">
+                    <img src="./static/images/mobi5.jpg" alt="insta5">
+                    <img src="./static/images/mobi6.jpg" alt="insta6">
+                </div>
+            </div>
+            <div class="follow">
+                <h2>Follow Us</h2>
+                <p>Connect with MobiMart</p>
+                <div>
+                    <a href="https://www.linkedin.com/in/kavan-gondalia-5a78a41b2/" target="_black"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://www.facebook.com/" target="_black"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/kavania2002/" target="_black"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/" target="_black"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="rights flex-row">
+            <h4 class="text-gray">
+                Copyright © 2021 All rights reserved |
+                <a href="https://www.linkedin.com/in/kavan-gondalia-5a78a41b2/" target="_black">MobiMart</a>
+            </h4>
+        </div>
+        <div class="move-up">
+            <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+        </div>
+    </footer>
+
+    <!-- -------------x------------- Footer --------------------x------------------- -->
+
+    <!-- Jquery Library file -->
+    <script type="text/javascript" src="{% static 'js/Jquery3.4.1.min.js' %}"></script>
 
     <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
 </body>
