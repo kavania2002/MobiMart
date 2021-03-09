@@ -9,3 +9,4 @@
 | https://github.com/swetakb15         | Sweta Barnwal     | 1                | 1    | 0      | 0    | 150    |
 | https://github.com/QAZIMAAZARSHAD    | Qazi Maaz Arshad  | 1                | 0    | 1      | 0    | 250    |
 | https://github.com/kmryashasvi       | Yashasvi          | 1                | 1    | 0      | 0    | 150    |
+| https://github.com/ayushrastogi689   | Ayush Rastogi     | 1                | 0    | 0      | 0    | 50     |
