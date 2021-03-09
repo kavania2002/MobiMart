@@ -1,16 +1,15 @@
-# 🤝***First time contributing? We will help you out.*** 👍
+# 🤝**_First time contributing? We will help you out._** 👍
 
 ![GitHub custom open for collaboration](https://img.shields.io/badge/Open%20For-Collaboration-brightgreen?style=for-the-badge)
 
 Refer to the following articles on the basics of Git and Github and can also contact the Project Mentors, in case you are stuck:
-
 
 - [Getting started with Git and GitHub](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github)
 - [Forking a Repo](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
 - [Cloning a Repo](https://help.github.com/en/desktop/contributing-to-projects/creating-a-pull-request)
 - [How to create a Pull Request](https://opensource.com/article/19/7/create-pull-request-github)
 
-***If you don't have git on your machine, [install it](https://help.github.com/articles/set-up-git/).***
+**_If you don't have git on your machine, [install it](https://help.github.com/articles/set-up-git/)._**
 
 ## 💥 How to Contribute
 
@@ -26,59 +25,79 @@ Refer to the following articles on the basics of Git and Github and can also con
 ### For Contribution
 
 - Fork and Clone the repository using-
+
 ```
 git clone https://github.com/kavania2002/MobiMart.git
 ```
+
 - Create virtual environment-
+
 ```
 python -m venv env
 env\Scripts\activate
 ```
+
 **3.** Install dependencies using-
+
 ```
 pip install -r requirements.txt
 ```
-*If you have python2 and python3 installed you need to specify python3 by using command:*
+
+_If you have python2 and python3 installed you need to specify python3 by using command:_
+
 ```
 python3 -m pip install -r requirements.txt
 ```
 
-- Headover to Project Directory- 
+- Headover to Project Directory-
+
 ```
-cd bloggitt
+cd mobimart
 ```
+
 - Make migrations using-
+
 ```
 python manage.py makemigrations
 ```
-*If you have python2 and python3 installed you need to specify python3 by using command:*
+
+_If you have python2 and python3 installed you need to specify python3 by using command:_
+
 ```
 python3 manage.py makemigrations
 ```
 
 - Migrate Database-
+
 ```
 python manage.py migrate
 ```
+
 - Create a superuser-
+
 ```
 python manage.py createsuperuser
 ```
+
 - Run server using-
+
 ```
 python manage.py runserver
 ```
+
 - Push Changes-
+
 ```
 git add .
 git commit -m "<your commit message>"
 git push
 ```
+
 - Create a [PR](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) !
 
 - **Congratulations!** Sit and relax, you've made your contribution to [MobiMart](https://github.com/kavania2002/MobiMart) project.
 
-- :trophy: After this, project leaders and mentors will review the changes and will merge your PR if they are found good, otherwise we will suggest the required changes.***
+- :trophy: After this, project leaders and mentors will review the changes and will merge your PR if they are found good, otherwise we will suggest the required changes.\*\*\*
 
 ## Style Guides for Git Commit Messages:memo:
 
@@ -97,6 +116,7 @@ git push
 For more detailed reference to the above points, refer here: https://chris.beams.io/posts/git-commit.
 
 ## 💥 Issues:
+
 For major changes, you are welcomed to open an issue about what you would like to contribute. Enhancements will be appreciated.
 
 #### All the Best!🥇
@@ -107,4 +127,3 @@ For major changes, you are welcomed to open an issue about what you would like t
 [![built with love](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/kavania2002/MobiMart)
 
 </p>
-
