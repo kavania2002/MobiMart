@@ -1,3 +1,7 @@
+AOS.init({
+    duration: 1200,
+  });
+
 var updateBtns = document.getElementsByClassName("update-cart")
 
 for (var i = 0; i < updateBtns.length; i++) {
