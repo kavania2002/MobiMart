@@ -4,19 +4,23 @@
 <html lang="en">
 
 <head>
-    <!-- <meta charset="UTF-8"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
     <meta name="title" property='og:title' content='MobiMart' />
     <meta name="image" property='og:image' content='https://mobimartk.herokuapp.com/static/images/Logo.png' />
     <meta name="description" property='og:description' content='Shop your mobile.' />
     <meta property='og:url' content='https://mobimartk.herokuapp.com/' />
-    
+
     <title>MobiMart</title>
-    
+
     <!-- Title bar icon -->
-    <link rel = "icon" href ="./static/images/Logo.png" "type "image/x-icon"> 
-                                                                            
+    <link rel = "icon" href ="./static/images/Logo.png" type="image/x-icon">
+
     <!-- CSS Static -->
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
@@ -58,15 +62,32 @@
 <body>
     <div class="themechange">
     <!-- Tittle Section -->
-    <div class="title">
+    <div class="title" style="
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 50px;">
 
         <!-- Navigation Bar -->
-        <nav class="navbar navbar-expand-lg navbar-dark">
+
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top" >
             <div class="container-fluid">
-                <a href="/" class="navbar-brand"><img src="{% static 'images/Logo.png' %}" alt="Logo" srcset=""></a>
+                <a href="/" class="navbar-brand"><img src="{% static 'images/Logo.png' %}" width="60" height="60" alt="Logo" srcset=""></a>
                 <img src="https://mobimartk.herokuapp.com/static/images/Logo.png" class="visually-hidden" alt="" srcset="">
-                <ul class="navbar-nav">
-                    
+                <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="true"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+
                     <p>Light/Dark Mode</p>
                         <div class="switch">
                             <span class="btn-toggle"></span>
@@ -77,10 +98,10 @@
                     </li>
                     <li>
                     </li>
-                    
+
                     <li class="nav-item">
                         <a href="cart"><i class="fas fa-shopping-cart nav-link">{{order.get_cart_items}}</i></a>
-                        
+
                     </li>
                     <li class="nav-item">
                         <a href="logout" class="nav-link">Logout</a>
