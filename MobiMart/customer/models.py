@@ -6,9 +6,14 @@ class Customer(models.Model):
     user = models.OneToOneField(User,on_delete=models.CASCADE, null=True, blank=True)
     name = models.CharField(max_length=200,null=True)
     email =models.EmailField(max_length=100,null=True)
+    device=models.CharField(max_length=200,null=True,blank=True)
 
     def __str__(self):
-        return str(self.name)
+        if self.name:
+            name=self.name
+        else:
+            name=self.device
+        return str(name)
 
 class Product(models.Model):
 
