@@ -9,12 +9,12 @@ for (var i = 0; i < updateBtns.length; i++) {
         var action = this.dataset.action
         console.log('productId: ', productId, 'action: ', action)
 
-        if (user === 'AnonymousUser') {
-            console.log("Need to Login")
-        } else {
+        // if (user === 'AnonymousUser') {
+        //     console.log("Need to Login")
+        // } else {
             updateUserOrder(productId, action)
             console.log("Successfull")
-        }
+        // }
     })
 }
 

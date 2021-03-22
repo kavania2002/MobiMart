@@ -45,7 +45,7 @@
     <script>
         var user = '{{request.user}}'
 
-        function getToken(name) {
+        function getCookie(name) {
             let cookieValue = null;
             if (document.cookie && document.cookie !== '') {
                 const cookies = document.cookie.split(';');
@@ -59,7 +59,22 @@
             }
             return cookieValue;
         }
-        const csrftoken = getToken('csrftoken');
+        const csrftoken = getCookie('csrftoken');
+
+        function uuidv4() {
+            return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+                var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+                return v.toString(16);
+  });
+}
+
+        let device=getCookie('device')
+
+        if(device==null||device==undefined){
+            device=uuidv4()
+
+        }
+        document.cookie='device='+device+";domain=;path=/"
     </script>
 
 </head>
@@ -113,6 +128,16 @@
                     </li>
 
                     {% else %}
+                    <li class="nav-item">
+                        Welcome
+                    </li>
+                    <li>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="cart"><i class="fas fa-shopping-cart nav-link">{{order.get_cart_items}}</i></a>
+
+                    </li>
                     <li class="nav-item">
                         <a href="login" class="nav-link">Login</a>
                     </li>

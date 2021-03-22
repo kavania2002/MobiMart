@@ -11,7 +11,7 @@ from .models import *
 # Create your views here.
 def checkpass(passw3):
     is_digit=False
-    is_upper=False
+    is_upper=False 
     is_lower=False
     is_check=False
     is_length=False
@@ -35,14 +35,15 @@ def checkpass(passw3):
 
 def index(request):
     products = Product.objects.all()
-    if request.user.is_authenticated:
+    try:
         customer = request.user.customer
-        order, created = Order.objects.get_or_create(customer=customer, complete=False)
-        items = order.orderitem_set.all()
+    except:
+        device=request.COOKIES['device']
+        customer,created=Customer.objects.get_or_create(device=device)
 
-    else:
-        items = []
-        order = {'get_cart_total':0, 'get_cart_item': 0}
+    order, created = Order.objects.get_or_create(customer=customer, complete=False)
+    items = order.orderitem_set.all()
+
     return render(request,"index.html", {'products':products,'items':items, 'order':order})
 
 def register(request):
@@ -53,6 +54,7 @@ def register(request):
         username = request.POST['username']
         passw1 = request.POST['password1']
         passw2 = request.POST['password2']
+        device=request.COOKIES['device']
         # print("hello")
         if passw1 == passw2:
             if User.objects.filter(username=username).exists():
@@ -70,7 +72,7 @@ def register(request):
                 user = User.objects.create_user(username=username,first_name=firstname,last_name=lastname,email=email,password=passw1)
                 user.save()
 
-                customer = Customer.objects.create(user=user,name=firstname,email=email)
+                customer = Customer.objects.create(user=user,name=firstname,email=email,device=device)
                 customer.save()
                 return redirect("login")
         
@@ -117,15 +119,14 @@ def checkout(request):
     return render(request,"checkout.html", context)
 
 def cart(request):
-    if request.user.is_authenticated:
+    try:
         customer = request.user.customer
-        order, created = Order.objects.get_or_create(customer=customer, complete=False)
-        items = order.orderitem_set.all()
+    except:
+        device=request.COOKIES['device']
+        customer,created=Customer.objects.get_or_create(device=device)
 
-    else:
-        items = []
-        order = {'get_cart_total':0, 'get_cart_item': 0}
-
+    order, created = Order.objects.get_or_create(customer=customer, complete=False)
+    items = order.orderitem_set.all()
     context = {'items':items, 'order':order}
     return render(request,"cart.html",context)
 
@@ -136,9 +137,15 @@ def updateItem(request):
 
     print('action ',action)
     print('productId ', productId)
-
-    customer = request.user.customer
     product = Product.objects.get(id=productId)
+
+    try:
+        customer = request.user.customer
+    except:
+        device=request.COOKIES['device']
+        customer,created=Customer.objects.get_or_create(device=device)
+
+    
     order, created = Order.objects.get_or_create(customer=customer, complete=False)
 
     orderItem, created = OrderItem.objects.get_or_create(order=order, product=product)

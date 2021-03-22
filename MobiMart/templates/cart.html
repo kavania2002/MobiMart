@@ -46,7 +46,11 @@
         <hr>
     <div class="cart_buttons">
         <button class="btn btn-warning"><a class="nav-link link-dark" href="/">Continue Shopping</a></button>
+        {% if user.is_authenticated %}
         <button class="btn btn-warning"><a class="nav-link link-dark" href="checkout">Checkout</a></button>
+        {% else %}
+        <button class="btn btn-warning"><a class="nav-link link-dark" href="register">Register</a></button>
+        {% endif %}
     </div>
 </div>
 </div>
